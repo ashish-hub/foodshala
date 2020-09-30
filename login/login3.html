@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<------ Include the above in your HEAD tag ---------->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="login2.css">
+</head>
+
+<body>
+		<div class="container-fluid" style="display:inline-block;width:100%; height:100%; position:absolute; margin-left:20%; margin-top: 10%;margin-bottom:10%;  margin-right: 20%">
+			<div>
+				<div>
+					<h1>FoodShala</h1>
+					<br>
+					<h1>Welcome Back!</h1>
+				</div>
+	
+
+		<div class="col-xs-4">
+			<form action="../api/login.php" method="POST" class="form-horizontal">
+			<div class="login" class="form-group">
+			<label for="username">Username</label><br>
+			<input type="text" name="username" class=".form-control"><br>
+			<label for="password">Password</label><br>
+			<input type="password" name="password" class=".form-control"><br>
+			<label for="login">Log In</label><br>
+			<input type="submit" name="login" class=".form-control">
+		</div>
+		</form>
+	
+	<br><br><br><br><br><br>
+	<h1> SignUp below </h1>
+	
+		<form action="../api/signup.php" method="POST" class="form-horizontal">
+			<div class="signup col-xs-4" class="form-group">
+			<label for="name">Name</label><br>
+			<input type="text" name="name" class=".form-control"><br>
+			<label for="username">Username</label><br>
+			<input type="text" name="username" class=".form-control"><br>
+
+<script type="text/javascript">
+	function hidecat(){
+		document.getElementById("cat").style.visibility = "hidden";
+		document.getElementById("add").style.visibility = "visible";
+	}
+	function hideadd(){
+		document.getElementById("cat").style.visibility = "visible";
+		document.getElementById("add").style.visibility = "hidden";
+	}
+</script>
+
+			<label for="owner">Owner</label><br>
+			<input type="radio" onclick="hidecat()" name="type" value="Owner" class=".form-control" ><br>
+			<label for="customer" >Customer</label><br>
+			<input type="radio" onclick="hideadd()" name="type" value="Customer" class=".form-control"><br>
+
+
+			<div id="cat" style="visibility: hidden;">
+			<label for="category"veg>Veg</label><br>
+			<input type="radio" name="category" value="VEG" class=".form-control"><br>
+			<label for="category">Non-Veg</label><br>
+			<input type="radio" name="category" value="NON-VEG" class=".form-control"><br>
+			</div>
+
+			<div id="add" style="visibility: visible;">
+			<label >Resturant name</label><br>
+			<input type="text" name="res_name" class=".form-control"><br>
+			<label >Resturant Address</label><br>
+			<input type="text" name="resturantaddress" class=".form-control"><br>				
+			</div>
+
+			<label for="password">Password</label><br>
+			<input type="password" name="password" class=".form-control"><br>
+			<label for="confirmpassword">Confirm Password</label><br>
+			<input type="password" name="confirmpassword" class=".form-control"><br>
+			<label for="signup">Sign Up</label><br>
+			<input type="submit" name="signup" class=".form-control">
+			</div>
+		</form>
+	
+		</div>
+		</div>
+<script src="login2.js" type="text/javascript"></script>
+</body>
+</html>
